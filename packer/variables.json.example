@@ -1,0 +1,6 @@
+{
+    "f_id": "1234563",
+    "image": "ubuntu-1604-lts",
+    "key_file": "files/some_key",
+    "skip": "false"
+}

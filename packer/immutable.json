@@ -1,0 +1,34 @@
+{
+    "builders": [
+        {
+            "type": "yandex",
+            "service_account_key_file": "{{user `key_file`}}",
+            "folder_id": "{{user `f_id`}}",
+            "source_image_family": "{{user `image`}}",
+            "image_name": "{{user `family`}}-{{timestamp}}",
+            "image_family": "{{user `family`}}",
+            "ssh_username": "ubuntu",
+            "platform_id": "standard-v1",
+            "subnet_id": "e9binldg2djbcg5r2uab",
+            "use_ipv4_nat": true,
+	    "skip_create_image": "{{user `skip`}}"
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "file",
+            "destination": "~/",
+            "source": "files/puma.service"
+        },
+        {
+            "type": "shell",
+            "scripts": [
+              "scripts/install_ruby.sh",
+              "scripts/install_mongodb.sh",
+              "scripts/deploy.sh"
+	    ],
+            "max_retries": 2,
+            "execute_command": "sudo {{.Path}}"
+        }
+    ]
+}
