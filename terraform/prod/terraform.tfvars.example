@@ -1,0 +1,12 @@
+cloud_id                 = "l5z3pga4wwveidll3fju"
+folder_id                = "l5z3pga4wwveidll3fju"
+zone                     = "ru-central1-a"
+image_id                 = "l5z3pga4wwveidll3fju"
+public_key_path          = "terraform.tfvars.example"
+subnet_id                = "l5z3pga4wwveidll3fju"
+service_account_key_file = "terraform.tfvars.example"
+ssh_key_path             = "terraform.tfvars.example"
+app_servers_count        = 1
+network_id               = "l5z3pga4wwveidll3fju"
+app_disk_image           = "l5z3pga4wwveidll3fju"
+db_disk_image            = "l5z3pga4wwveidll3fju"
