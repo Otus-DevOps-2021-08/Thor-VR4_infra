@@ -13,18 +13,19 @@ module "app" {
   subnet_id         = module.vpc.subnet_id
   app_servers_count = var.app_servers_count
   ssh_key_path      = var.ssh_key_path
-  db_url            = module.db.local_ip_address_db
+  db_url            = module.db.local_ip_address_db[0]
 }
 
 module "db" {
-  source          = "../modules/db"
-  public_key_path = var.public_key_path
-  db_disk_image   = var.db_disk_image
-  subnet_id       = module.vpc.subnet_id
-  ssh_key_path    = var.ssh_key_path
+  source           = "../modules/db"
+  public_key_path  = var.public_key_path
+  db_disk_image    = var.db_disk_image
+  subnet_id        = module.vpc.subnet_id
+  ssh_key_path     = var.ssh_key_path
+  db_servers_count = var.db_servers_count
 }
 
 module "vpc" {
-  source          = "../modules/vpc"
-  network_id       = var.network_id
+  source     = "../modules/vpc"
+  network_id = var.network_id
 }

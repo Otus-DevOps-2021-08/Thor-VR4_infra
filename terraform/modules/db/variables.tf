@@ -12,3 +12,6 @@ variable ssh_key_path {
   # Описание переменной
   description = "Path to the key used for ssh access"
 }
+variable db_servers_count {
+  description = "How many instances we need"
+}

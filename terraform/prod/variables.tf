@@ -38,3 +38,6 @@ variable app_disk_image {
 variable db_disk_image {
   description = "DB disk image"
 }
+variable db_servers_count {
+  description = "How many instances we need"
+}
