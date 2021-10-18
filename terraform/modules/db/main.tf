@@ -40,6 +40,7 @@ resource "yandex_compute_instance" "db" {
     private_key = file(var.ssh_key_path)
   }
 
+  /*
   provisioner "file" {
     source      = "${path.module}/files/mongod.conf"
     destination = "/tmp/mongod.conf"
@@ -51,5 +52,6 @@ resource "yandex_compute_instance" "db" {
       "sudo systemctl restart mongod"
     ]
   }
+  */
 
 }

@@ -1,0 +1,14 @@
+---
+- name: Packer App
+  become: true
+  hosts: all
+  tasks:
+    - name: Install Software
+      apt:
+        name: "{{ item }}"
+        state: present
+        update_cache: yes
+      with_items:
+        - ruby-full
+        - ruby-bundler
+        - build-essential

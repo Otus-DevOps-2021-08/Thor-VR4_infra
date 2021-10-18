@@ -1,17 +1,17 @@
-# Управление конфигурацией. Основные DevOps инструменты. Знакомство с Ansible
-Домашняя работа №8
+# Деплой и управление конфигурацией с Ansible
+Домашняя работа №9
 
 ## Задание
-1. [Знакомство с Ansible](#chapter-0)
+1. [Знакомство с playbook в Ansible](#chapter-0)
 2. [Dynamic inventory](#chapter-1)
 
 
 <a id="chapter-0"></a>
-## Знакомство с Ansible
+## Знакомство с playbook в Ansible
 
-Были созданы inventory и playbook, согласно методическим указаниям
+Были созданы playbooks, согласно методическим указаниям
 
 <a id="chapter-1"></a>
 ## Dynamic inventory
 
-Был создан скрипт my_yc_instance2.py, берущий информацию о созданных объектах в YC и генерирующий inventory для ansible.
+Был создан dynamic invenory c помощью плагина для YC.
