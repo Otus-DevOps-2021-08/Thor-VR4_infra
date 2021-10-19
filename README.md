@@ -1,17 +1,23 @@
 # Деплой и управление конфигурацией с Ansible
-Домашняя работа №9
+Домашняя работа №10
 
 ## Задание
-1. [Знакомство с playbook в Ansible](#chapter-0)
-2. [Dynamic inventory](#chapter-1)
+1. [Ansible: работа с ролями и окружениями](#chapter-0)
+2. [Настройка Github Actions](#chapter-1)
 
 
 <a id="chapter-0"></a>
-## Знакомство с playbook в Ansible
+## Ansible: работа с ролями и окружениями
 
-Были созданы playbooks, согласно методическим указаниям
+Работаем с Ansible, согласно методическим указаниям
 
 <a id="chapter-1"></a>
-## Dynamic inventory
+## Настройка Github Actions
 
-Был создан dynamic invenory c помощью плагина для YC.
+Был созданы три workflow для валидации конфигураций packer, terraform, ansible.
+
+![Ansible workflow](https://github.com/Otus-DevOps-2021-08/Thor-VR4_infra/actions/workflows/ansible_lint.yml/badge.svg)
+
+![Packer workflow](https://github.com/Otus-DevOps-2021-08/Thor-VR4_infra/actions/workflows/packer_validate.yml/badge.svg)
+
+![Terraform workflow](https://github.com/Otus-DevOps-2021-08/Thor-VR4_infra/actions/workflows/terraform.yml/badge.svg)
