@@ -15,3 +15,6 @@ variable ssh_key_path {
 variable db_servers_count {
   description = "How many instances we need"
 }
+variable env {
+  description = "Enviroment"
+}

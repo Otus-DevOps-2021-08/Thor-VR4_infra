@@ -13,6 +13,7 @@ module "app" {
   subnet_id         = module.vpc.subnet_id
   app_servers_count = var.app_servers_count
   ssh_key_path      = var.ssh_key_path
+  env               = var.enviroment
   db_url            = module.db.local_ip_address_db[0]
 }
 
@@ -23,6 +24,7 @@ module "db" {
   subnet_id        = module.vpc.subnet_id
   ssh_key_path     = var.ssh_key_path
   db_servers_count = var.db_servers_count
+  env              = var.enviroment
 }
 
 module "vpc" {

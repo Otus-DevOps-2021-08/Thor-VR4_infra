@@ -19,3 +19,6 @@ variable db_url {
   # Описание переменной
   description = "DB address"
 }
+variable env {
+  description = "Enviroment"
+}

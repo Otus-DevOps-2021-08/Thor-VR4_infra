@@ -1,0 +1,6 @@
+---
+- name: Configure MongoDB
+  hosts: db # <-- Для каких хостов будут выполняться описанные ниже таски (hosts)
+  become: true
+  roles:
+    - db

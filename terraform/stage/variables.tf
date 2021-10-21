@@ -41,3 +41,6 @@ variable db_disk_image {
 variable db_servers_count {
   description = "How many instances we need"
 }
+variable enviroment {
+  description = "Enviroment"
+}

@@ -4,7 +4,7 @@ resource "yandex_compute_instance" "db" {
   count = var.db_servers_count
 
   labels = {
-    tags = "reddit-db"
+    tags = "${var.env}-reddit-db"
   }
 
   resources {

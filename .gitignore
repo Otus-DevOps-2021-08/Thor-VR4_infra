@@ -6,3 +6,5 @@ packer/variables.json
 .terraform/
 *.tmp
 *.retry
+jdauphant.nginx
+vault.key

@@ -4,7 +4,7 @@ resource "yandex_compute_instance" "app" {
   count = var.app_servers_count
 
   labels = {
-    tags = "reddit-app"
+    tags = "${var.env}-reddit-app"
   }
   resources {
     cores  = 2
